@@ -77,13 +77,6 @@ nav, p, section, article {
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
-.hero article img {
-    width: 150px;
-    height: auto;
-    border-radius: 10px;
-    flex-shrink: 0;
-}
-
 .hero article p {
     font-size: 1rem;
     line-height: 1.5;
