@@ -24,9 +24,10 @@ body {
 }
 
 header, main, footer {
-  width: 840px;
+  width: 100%
+  max-width: 840px;
   margin: auto;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 nav, p, section, article {
@@ -40,6 +41,7 @@ nav, p, section, article {
 
 .hero {
   position: relative;
+  overflow: hidden;
 }
 
 .hero img {
@@ -59,9 +61,35 @@ nav, p, section, article {
   color: #fff;
 }
 
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 900px;
+  background-color: rgba(238, 232, 232, 0.95);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
 .hero article img {
   float: right;
-  width: 125px;
+  width: 140px;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.hero article p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
 }
 
 .box {
@@ -100,7 +128,7 @@ section h2 {
     color: #fff; 
     padding: 15px; 
     border-radius: 8px; 
-    width:800px;
+    width:100%;
     text-align: center;
     margin: 2rem auto;
     font-family: var(--heading-font);
