@@ -24,7 +24,7 @@ body {
 }
 
 header, main, footer {
-  width: 100%
+  width: 100%;
   max-width: 840px;
   margin: auto;
   padding: 0 20px;
@@ -72,7 +72,7 @@ nav, p, section, article {
   padding: 1.5rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
