@@ -55,7 +55,7 @@ nav a {
   text-decoration: none;
   color: var(--accent2-color);
   font-weight: bold;
-  border: 2px solid black;
+  border: none
   padding: 10px;
   border-radius: 5px;
 }
@@ -109,7 +109,6 @@ nav, p, section, article {
   align-items: center;
   gap: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .hero article img {
@@ -170,7 +169,7 @@ nav, p, section, article {
 
 .adventure-gallery {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 1rem;
 }
 
