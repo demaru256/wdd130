@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #ebf5eb;
+  --primary-color: #d3c2f2;
   --secondary-color: #5e40e4;
   --accent1-color: #264653;
   --accent2-color: #0c0c0c;
@@ -351,8 +351,15 @@ section h2 {
 footer {
     display: grid;
     grid-template-columns: 1fr auto;
-    align-items: center;
+    background: #d3c2f2; 
     padding: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+footer .socialmedia img {
+    width: 32px;
+    margin: 0 .5rem;
 }
 
 footer p {
