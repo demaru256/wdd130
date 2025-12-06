@@ -153,6 +153,14 @@ nav, p, section, article {
     color: #333;
 }
 
+.history-img {
+    float: left;           
+    width: 200px;          
+    height: auto;
+    margin: 0 1rem 1rem 0; 
+    border-radius: 8px;    
+}
+
 .adventures {
   padding: 2rem 1rem;
 }
