@@ -10,7 +10,9 @@
 
     <meta name="author" content="Emaru Daniel">
 
-    <title>About Us | White Water Rafting Adventures</title>
+    <title>Contact Us | White Water Rafting Adventures</title>
+    <meta name="description"
+        content="Contact White Water Rafting Adventures for inquiries, reservations, or feedback. Reach us by phone, email, or our contact form.">
 
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -33,7 +35,7 @@
     <main>
 
         <section class="contact-info">
-            <h1>White Water Rafting Company</h1>
+            <h1>Contact White Water Rafting Adventures</h1>
             <p>123 Main River Street<br>
                 Kolob, California<br>
                 +1 999 999 9999<br>
@@ -42,50 +44,64 @@
 
             <div class="contact-container">
 
+                <!-- Google Map -->
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086505560616!2d-122.41941518468324!3d37.77492977975953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df1b!2sSome%20River%20Office!5e0!3m2!1sen!2sus!4v0000000000"
-                    width="600" height="800" style="border:o;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
 
+                <!-- Contact Form -->
                 <form class="contact-form">
 
-                    <div class="form-row">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="user-name" placeholder="Your name">
-                    </div>
+                    <!-- Name & Email on same row -->
+                    <div class="form-row-row">
+                        <div class="form-row">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="user-name" placeholder="Your name">
+                        </div>
 
-                    <div class="form-row">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="user-email" placeholder="Your email">
-                    </div>
-
-                    <div class="form-row">
-                        <label>Message Purpose</label>
-                        <div class="radio-group">
-                            <label><input type="radio" name="purpose" value="general"> General Inquiry</label>
-                            <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                            <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="user-email" placeholder="Your email">
                         </div>
                     </div>
 
-                    <!-- Leave the rest of the form as-is -->
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Type here"></textarea>
+                    <!-- Message Purpose -->
+                    <div class="form-row">
+                        <label>Message Purpose</label>
+                        <div class="radio-group">
+                            <label for="purpose-general">
+                                <input type="radio" id="purpose-general" name="purpose" value="general">
+                                General Inquiry
+                            </label>
+                            <label for="purpose-reservation">
+                                <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                                Reservation Question
+                            </label>
+                            <label for="purpose-suggestion">
+                                <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+                                Website Suggestion
+                            </label>
+                        </div>
+                    </div>
 
-                    <label>
-                        <input type="checkbox" name="subscribe">
+                    <!-- Message -->
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Type your message here"></textarea>
+
+                    <!-- Subscribe -->
+                    <label for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe">
                         Please subscribe me to the monthly newsletter
                     </label>
 
+                    <!-- Submit -->
                     <button type="submit" class="btn-submit">Get in Touch!</button>
 
                 </form>
 
-
             </div>
         </section>
-
 
         <section class="employees">
             <h2>We Are Here to Serve You</h2>
