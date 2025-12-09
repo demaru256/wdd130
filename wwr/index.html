@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home | White Water Rafting Adventures</title>
+    <meta name="description"
+        content="White Water Rafting Adventures — thrilling guided river trips, safety-first guides, and family-friendly adventure. Learn more and sign up for our newsletter.">
+    <meta name="author" content="Emaru Daniel">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Site Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" aria-label="Hero">
+            <img src="images/hero-wide.jpg" alt="Rafting team navigating rapids" />
+            <h1>Ride the Rapids — Adventure Awaits</h1>
+
+            <div class="box" aria-hidden="false">
+                <img src="images/hero-guide.jpg" alt="Guide smiling with life jacket">
+                <p>Join White Water Rafting Adventures for safe, expert-guided river trips. Whether you're a beginner or
+                    experienced paddler, we have a trip for you.</p>
+                <a class="btn-submit" href="trips.html">Explore Trips</a>
+            </div>
+        </section>
+
+        <section class="adventures">
+            <div class="adventures-grid">
+                <div class="newsletter">
+                    <h2>Join Our Newsletter</h2>
+                    <p>Get trip announcements, safety tips, and special offers delivered monthly.</p>
+
+                    <form class="newsletter-form" action="#" method="post" aria-label="Newsletter signup">
+                        <div class="form-row-row">
+                            <div class="form-row">
+                                <label for="newsletter-name">Name</label>
+                                <input id="newsletter-name" name="newsletter-name" type="text" placeholder="Your name"
+                                    required>
+                            </div>
+                            <div class="form-row">
+                                <label for="newsletter-email">Email</label>
+                                <input id="newsletter-email" name="newsletter-email" type="email"
+                                    placeholder="you@example.com" required>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Join Newsletter</button>
+                    </form>
+                </div>
+
+                <aside class="home-cta">
+                    <h2>Ready for Adventure?</h2>
+                    <p>Book a trip with our expert guides. Family-friendly options and multi-day expeditions available.
+                    </p>
+                    <a class="btn-submit" href="trips.html">See Trips & Book</a>
+                </aside>
+            </div>
+        </section>
+
+        <section class="grid-content" aria-labelledby="offerings-heading">
+            <h2 id="offerings-heading">What We Offer</h2>
+
+            <div class="offers-grid">
+                <article>
+                    <img src="images/offer-family.jpg" alt="Family rafting trip">
+                    <h3>Family & Beginner Trips</h3>
+                    <p>Gentle rapids and experienced guides make this a perfect introduction for families and beginners.
+                    </p>
+                </article>
+
+                <article>
+                    <img src="images/offer-advanced.jpg" alt="Advanced rafting in big rapids">
+                    <h3>Advanced Whitewater</h3>
+                    <p>Technical runs and multi-day expeditions for experienced paddlers looking for the next challenge.
+                    </p>
+                </article>
+
+                <article>
+                    <img src="images/offer-corporate.jpg" alt="Corporate team building rafting">
+                    <h3>Group & Corporate Events</h3>
+                    <p>Custom corporate team-building packages and private group trips tailored to your needs.</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 | White Water Rafting Adventures | Emaru Daniel</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook Icon"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.png" alt="LinkedIn Icon"></a>
+            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram Icon"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>
