@@ -378,7 +378,6 @@ footer .socialmedia a img:hover {
     opacity: 0.8;
 }
 
-/* Add this to your existing CSS */
 .offers-grid {
   display: flex;
   flex-wrap: wrap;
@@ -403,7 +402,6 @@ footer .socialmedia a img:hover {
   border-radius: 10px 10px 0 0;
 }
 
-/* Responsive Grid Layout */
 .trip-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -437,7 +435,6 @@ footer .socialmedia a img:hover {
     justify-content: space-between;
 }
 
-/* Simple Table Styling */
 .trip-table {
     margin: 30px auto;
     max-width: 800px;
@@ -480,3 +477,260 @@ footer .socialmedia a img:hover {
     display: inline-block;
 }
 
+.home-hero {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.hero-image-container img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    text-align: center;
+    margin-top: 1rem;
+    font-family: var(--heading-font);
+}
+
+.hero-highlight {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.hero-highlight img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.highlight-text {
+    flex: 1;
+}
+
+.highlight-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.home-actions {
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
+}
+
+.actions-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.newsletter-card, .cta-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 2px solid var(--primary-color);
+}
+
+.newsletter-card h2, .cta-card h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-family: var(--heading-font);
+}
+
+.newsletter-card p, .cta-card p {
+    margin-bottom: 1.5rem;
+    color: var(--accent1-color);
+}
+
+.newsletter-form .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--accent1-color);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.offerings {
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.offerings h2 {
+    font-size: 2.5rem;
+    color: var(--accent1-color);
+    margin-bottom: 2rem;
+    font-family: var(--heading-font);
+}
+
+.offerings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.offering-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.offering-card:hover {
+    transform: translateY(-10px);
+}
+
+.offering-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.offering-card h3 {
+    padding: 1.5rem 1.5rem 0.5rem;
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+}
+
+.offering-card p {
+    padding: 0 1.5rem 1.5rem;
+    line-height: 1.6;
+    color: var(--accent1-color);
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: #4a2fd0;
+    transform: scale(1.05);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-highlight {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .hero-highlight img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .actions-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .newsletter-form .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .offerings-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+
+nav a.active {
+    background-color: var(--secondary-color);
+    color: white !important;
+    border-radius: 5px;
+}
